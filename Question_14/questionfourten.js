@@ -17,5 +17,7 @@ console.log('Second set of inital invite:\n');
 initailInvite2();
 console.log('\n Add more Guest in the dinner \n');
 guestlist2.unshift('Harry Potter');
+let midAdd = Math.floor(guestlist2.length / 2);
+guestlist2.splice(midAdd, 0, 'Tom');
 guestlist2.push('Ben 10');
 initailInvite2();

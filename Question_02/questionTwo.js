@@ -1,5 +1,5 @@
 "use strict";
-let personName = 'Harry Potter';
+let personName = 'Harry potter';
 console.log(personName.toLowerCase());
 console.log(personName.toUpperCase());
 const titleCase = (str) => {

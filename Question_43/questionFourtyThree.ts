@@ -3,13 +3,12 @@ interface Car{
     model:string;
    [key:string]:any;
 }
-const buildCar = (company:string,model:string, ...optional:{ [key: string]: any }) :Car => {
+const buildCar = (company:string,model:string, optional:{ [key: string]: any }) :Car => {
     let car:Car = {
         company: company,
         model: model,
         ...optional,
     }
     return car;
-
 }
-console.log(buildCar('Bently','Flying Spur',{color:'blue',warranty:'2 Year'}))
+console.log(buildCar('Bently','Flying Spur',{color:'blue',year:2022}));

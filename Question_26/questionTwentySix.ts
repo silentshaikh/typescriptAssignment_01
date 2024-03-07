@@ -1,4 +1,4 @@
-let age:number = 66;
+let age:number = 18;
 if(age<2){
     console.log('The Person is a Baby');
 }else if(age===2 || age<4){
@@ -9,8 +9,6 @@ if(age<2){
     console.log('The Person is a Teenager')
 }else if(age ===20 || age<65){
     console.log('The Person is a Adult')
-}else if(age === 65){
-    console.log('The Person is a Elder')
 }else{
-    console.log('Invalid Age')
+    console.log('The Person is a Elder')
 }

@@ -1,15 +1,17 @@
 "use strict";
 // questionFourtyOne.ts
-let magicianNames2 = ['Harry Houdini', 'Harry Potter', 'Ron', 'Albus Dumbledore', 'Snape'];
-let magicianNames2Copy = magicianNames2.slice();
-const great_magician = (arr) => {
-    return arr.map((e) => `Great ${e}`);
+let magicianNames3 = ['Harry Houdini', 'Harry Potter', 'Ron', 'Albus Dumbledore', 'Snape'];
+let magicianNames3Copy = magicianNames3.slice();
+const great_magician1 = (arrCopy) => {
+    return arrCopy.map((e) => `Great ${e}`);
 };
-const show_magician2 = (arr) => {
-    let magicianName = arr.join();
-    console.log(magicianName);
+const show_magician3 = (arr) => {
+    arr.forEach((e) => {
+        console.log(e);
+    });
 };
-let greatMagician = great_magician(magicianNames2Copy);
+let greatMagician = great_magician1(magicianNames3Copy);
 console.log('Original Magician');
-show_magician2(magicianNames2);
-show_magician2(greatMagician);
+show_magician3(magicianNames3);
+console.log(' \nInclude the name with Great');
+show_magician3(greatMagician);

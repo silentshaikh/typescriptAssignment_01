@@ -1,4 +1,4 @@
-let personName:string = 'Harry Potter';
+let personName:string = 'Harry potter';
 console.log(personName.toLowerCase());
 console.log(personName.toUpperCase())
 const titleCase = (str:string):string => {

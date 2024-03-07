@@ -1,5 +1,5 @@
 "use strict";
-let personsName = '\t\n    Bill Gates   \t\n';
+let personsName = '\t    Bill Gates   \n';
 console.log('With Space');
 console.log(personsName);
 let removeSpaceOfName = personsName.trim();

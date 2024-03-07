@@ -17,6 +17,6 @@ console.log(5===5 && 10!==10)
 console.log(5===5 || 10!==10)
 // Test whether an item is in a array
 let arr:string[] = ['Apple','Banana','Orange'];
-console.log(arr.includes('Apple'));
+console.log(arr.includes('Orange'));
 // Test whether an item is not in a array
 console.log(arr.includes('Guava'));

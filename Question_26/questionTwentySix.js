@@ -1,5 +1,5 @@
 "use strict";
-let age = 66;
+let age = 18;
 if (age < 2) {
     console.log('The Person is a Baby');
 }
@@ -15,9 +15,6 @@ else if (age === 13 || age < 20) {
 else if (age === 20 || age < 65) {
     console.log('The Person is a Adult');
 }
-else if (age === 65) {
-    console.log('The Person is a Elder');
-}
 else {
-    console.log('Invalid Age');
+    console.log('The Person is a Elder');
 }

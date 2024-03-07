@@ -2,7 +2,7 @@
 let guestlist3 = ['Bill Gates', 'Elon Musk', 'Babar Azam', 'Hasan Ali', 'khushal Khan'];
 const initailInvite3 = () => {
     guestlist3.forEach((e) => {
-        console.log(`Dear ${e}, \n You are invited to dinner at my House.\n`);
+        console.log(`Dear ${e}, \n You are invited to dinner at my House.`);
     });
 };
 const replaceGuest3 = (oldGuest, newGuest) => {
@@ -17,20 +17,20 @@ console.log('Second set of inital invite:\n');
 initailInvite3();
 console.log('\n Add more Guest in the dinner \n');
 guestlist3.unshift('Harry Potter');
+let midAdd1 = Math.floor(guestlist3.length / 2);
+guestlist3.splice(midAdd1, 0, 'Tom');
 guestlist3.push('Ben 10');
 initailInvite3();
 console.log('\n We can invite only two people for dinner. \n');
-let remOne = guestlist3.pop();
-let remTwo = guestlist3.pop();
-let remThree = guestlist3.pop();
-let remFour = guestlist3.shift();
-let remFive = guestlist3.shift();
-let removGuestList = [remOne, remTwo, remThree, remFour, remFive];
-removGuestList.forEach((e) => {
-    console.log(`Dear ${e},\n Sorry you can't invite them to dinner. \n`);
-});
+while (guestlist3.length > 2) {
+    let popOut = guestlist3.pop();
+    console.log(`${popOut} \n Sorry we can't invite you for dinner.\n`);
+}
+console.log(guestlist3);
 guestlist3.forEach((e) => {
-    console.log(`Dear ${e}, \n You are still invited to dinner at my House.\n `);
+    console.log(`${e} \n You are still invited for the dinner \n`);
 });
-guestlist3.splice(0, 2);
+console.log('Remove the last two guest from list \n');
+guestlist3.pop();
+guestlist3.pop();
 console.log(guestlist3);

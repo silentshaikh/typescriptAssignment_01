@@ -1,4 +1,4 @@
-let favourite_fruits = ['Guava','Pineapple','Mango'];
+let favourite_fruits:string[] = ['Guava','Pineapple','Mango'];
 if(favourite_fruits[0] === 'Guava'){
     console.log(`Do you really like ${favourite_fruits[0]}`)
 }

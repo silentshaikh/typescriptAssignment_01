@@ -1,4 +1,4 @@
-let personsName:string = '\t\n    Bill Gates   \t\n';
+let personsName:string = '\t    Bill Gates   \n';
 console.log('With Space');
 console.log(personsName);
 let removeSpaceOfName = personsName.trim();
