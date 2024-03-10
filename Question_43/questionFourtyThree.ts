@@ -3,11 +3,11 @@ interface Car{
     model:string;
    [key:string]:any;
 }
-const buildCar = (company:string,model:string, optional:{ [key: string]: any }) :Car => {
+const buildCar = (company:string,model:string, extraFeature:{ [key: string]: any }) :Car => {
     let car:Car = {
         company: company,
         model: model,
-        ...optional,
+        ...extraFeature,
     }
     return car;
 }
