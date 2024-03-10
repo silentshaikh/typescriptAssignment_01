@@ -1,9 +1,9 @@
 "use strict";
-const buildCar = (company, model, optional) => {
+const buildCar = (company, model, extraFeature) => {
     let car = {
         company: company,
         model: model,
-        ...optional,
+        ...extraFeature,
     };
     return car;
 };
